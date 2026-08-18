@@ -1,0 +1,14 @@
+.cont {
+  height: 100%;
+  width: 100%;
+  background: blue;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  background: red;
+  position: relative;
+  bottom: 0;
+  position: absolute;
+}

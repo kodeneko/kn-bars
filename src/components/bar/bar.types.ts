@@ -3,4 +3,9 @@ type BarProps = {
   max: number;
 };
 
-export type { BarProps };
+type ContBarProps = {
+  bars: BarProps['size'][];
+  max: BarProps['max'];
+};
+
+export type { BarProps, ContBarProps };

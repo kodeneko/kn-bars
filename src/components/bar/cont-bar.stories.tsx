@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Bar } from './bar.component';
+import { ContBar } from './cont-bar.component';
 
 const meta = {
-  title: 'Example/Bar',
-  component: Bar,
+  title: 'Example/ContBar',
+  component: ContBar,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
 
   args: {
-    size: 50,
+    bars: [50, 20, 80],
     max: 100,
   },
-} satisfies Meta<typeof Bar>;
+} satisfies Meta<typeof ContBar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

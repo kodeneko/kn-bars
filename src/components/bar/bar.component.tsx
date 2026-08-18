@@ -15,4 +15,4 @@ const Bar: React.FC<BarProps> = ({ size, max }) => {
   )
 }
 
-export default Bar;
+export { Bar };

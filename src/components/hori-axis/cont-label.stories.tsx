@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { HoriAxis } from './hori-axis.component';
+import { ContLabel } from './cont-label.component';
 
 const meta = {
-  title: 'Example/HoriAxis',
-  component: HoriAxis,
+  title: 'Example/ContLabel',
+  component: ContLabel,
   parameters: {
     layout: 'centered',
   },
@@ -12,7 +12,7 @@ const meta = {
   args: {
     labels: ['label01', 'label02', 'label03']
   },
-} satisfies Meta<typeof HoriAxis>;
+} satisfies Meta<typeof ContLabel>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

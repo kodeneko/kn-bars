@@ -1,5 +1,7 @@
-type HoriAxisProps = {
+type ContLabelProps = {
   labels: string[]
 }
 
-export type { HoriAxisProps };
+type HoriAxisProps = ContLabelProps;
+
+export type { ContLabelProps, HoriAxisProps };

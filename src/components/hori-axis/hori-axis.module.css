@@ -1,0 +1,10 @@
+.cont {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.lab {
+  text-align: center;
+  flex-grow: 1;
+}

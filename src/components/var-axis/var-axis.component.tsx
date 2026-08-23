@@ -1,0 +1,25 @@
+import React from 'react';
+import type { VarAxisProps } from './var-axis.types';
+import styles from './var-axis.module.css';
+
+const VarAxis: React.FC<VarAxisProps> = ({ max, divs }) => {
+  const chunk = max / divs;
+  const labels = Array(divs).fill(0)
+    .map((_, index) => chunk * (index + 1) )
+    .reverse();
+  
+  return (
+    <div className={styles.mainCont}>
+      <div className={styles.cont}>
+        {labels.map(lab =>
+          <div className={styles.info}>
+            <div className={styles.lab}>{lab}</div>
+          </div>
+        )}
+      </div>
+    </div>
+
+  )
+}
+
+export { VarAxis };

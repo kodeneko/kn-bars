@@ -10,13 +10,11 @@ const VarAxis: React.FC<VarAxisProps> = ({ max, divs }) => {
   
   return (
     <div className={styles.mainCont}>
-      <div className={styles.cont}>
-        {labels.map(lab =>
-          <div key={lab} className={styles.info}>
-            <div className={styles.lab}>{lab}</div>
-          </div>
-        )}
-      </div>
+      {labels.map(label =>
+        <div key={label} className={styles.info}>
+          <div className={styles.label}>{label}</div>
+        </div>
+      )}
     </div>
 
   )

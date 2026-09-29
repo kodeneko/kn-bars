@@ -1,12 +1,6 @@
 .mainCont {
   display: flex;
-  height: 100%;
-}
-
-.cont {
-  display: flex;
   flex-direction: column;
-  height: 100%
 }
 
 .info {
@@ -15,8 +9,12 @@
   justify-content: flex-end;
   align-items: flex-start;
   gap: 8px;
+  box-sizing: border-box;
 }
 
-.lab {
-
+.label {
+  width: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+  text-align: right;
 }

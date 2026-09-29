@@ -25,7 +25,7 @@ export const Primary: Story = {
       <div
         style={{
           height: '30rem',
-          width: '30rem',
+          width: '50rem',
         }}
       >
         <Story />

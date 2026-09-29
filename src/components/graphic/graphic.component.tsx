@@ -9,9 +9,12 @@ const Graphic: React.FC<GraphicProps> = ({ labels, bars, max }) => {
 
   return (
     <div className={styles.cont}>
-      <VarAxis max={max} divs={5} />
-      <div className={styles.part02}>
+      <div className={styles.top}>
+        <VarAxis max={max} divs={5} />
         <ContBar bars={bars} max={max} />
+      </div>
+      <div className={styles.bottom}>
+        <div className={styles.xtra}></div>
         <ContLabel labels={labels} />
       </div>
     </div>
